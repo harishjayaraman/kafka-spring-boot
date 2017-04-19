@@ -42,10 +42,10 @@ public class User {
 	
 	@Override
 	public String toString() {
-		return "{" + this.firstName + ","
-				+ this.lastName +","
-				+ this.age + ","
-				+ this.gender + "}";
+		return "{" + "First name : " + this.firstName + ","
+				+ "Last name : " +this.lastName +","
+				+ "Age :" + this.age + ","
+				+ "Gender : " + this.gender + "}";
 	}
 
 }

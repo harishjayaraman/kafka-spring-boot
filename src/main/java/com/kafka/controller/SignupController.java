@@ -14,17 +14,15 @@ import com.kafka.publisher.UserKafkaPublisher;
 @RequestMapping("/signup")
 public class SignupController {
 
-	private static final String USER_TOPIC = "user.topic";
+	private static final String SIGNUP_TOPIC = "signup.topic";
 	
 	@Autowired
 	private UserKafkaPublisher userKafkaPublisher;
-
-	
 	
 	
 	@RequestMapping(value = "/signup", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	public User signup(@RequestBody User user){
-		userKafkaPublisher.sendMessage(USER_TOPIC, user);
+		userKafkaPublisher.sendMessage(SIGNUP_TOPIC, user);
 		return user;
 	}
 	
