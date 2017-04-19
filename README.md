@@ -9,8 +9,7 @@ and Apache kafka for Windows environment.
 https://www.codenotfound.com/2016/09/apache-kafka-download-installation.html
 
 ```
-Default port of Apache Kafka 9092.
-
+Default port of Apache Kafka is ##9092.
 ```
 
 
