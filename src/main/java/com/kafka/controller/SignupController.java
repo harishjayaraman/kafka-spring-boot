@@ -11,7 +11,6 @@ import com.kafka.model.User;
 import com.kafka.publisher.UserKafkaPublisher;
 
 @RestController
-@RequestMapping("/signup")
 public class SignupController {
 
 	private static final String SIGNUP_TOPIC = "signup.topic";
